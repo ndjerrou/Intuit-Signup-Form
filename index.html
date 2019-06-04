@@ -11,62 +11,71 @@
     <nav>
       <div id="login">
         <span>Already have an Intuit account?</span>
-        <span>I forgot my User ID or Password</span>
+        <a
+          href="https://accounts.intuit.com/account-recovery.html?offering_id=Intuit.ifs.mint&namespace_id=50000026&redirect_url=https%3A%2F%2Fmint.intuit.com%2Foverview.event%3Ftask%3DS"
+          >I forgot my User ID or Password</a
+        >
       </div>
       <div id="button">
         <button id="signin-button">
-          <img src="/assets/images/login-icon.png" alt="" /> Sign In
+          <img src="/assets/images/login-icon.png" alt="" />
+          <span>Sign In</span>
         </button>
       </div>
     </nav>
     <main>
-      <div id="container">
-        <div id="logo"></div>
-        <section id="form"></section>
-      </div>
-    </main>
-    <!-- <div id="header">
-      <span>Already have an Intuit account?</span>
-      <span>I forgot my User ID or Password</span>
-      <button id="login">Sign In</button>
-    </div>
-    <div id="logo">INTUIT</div>
-    <div id="form">
-      <form action="" method="post">
-        <span>Create an Intuit account</span>
-        <span>One account for everything Intuit, including Mint.</span>
-        <span>Learn more</span>
-        <div>
+      <section>
+        <div id="title">
+          <a href="#"><h1>INTUIT</h1></a>
+        </div>
+        <div id="icons">
+          <img src="" alt="" />
+          <span>mint</span>
+          <img src="" alt="" />
+          <span>quickbooks</span>
+          <img src="" alt="" />
+          <span>turbotax</span>
+        </div>
+
+        <form>
+          <div id="description-form">
+            <h2>Create an Intuit account</h2>
+            <span class="one-account"
+              >One account for everything Intuit, including Mint.</span
+            >
+            <a
+              href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account"
+              class="learn-more-link"
+              >Learn more</a
+            >
+          </div>
           <label for="email">Email address</label>
-          <input type="text" id="email" />
-        </div>
-        <div>
-          <label for="tel">Phone (recommended)</label>
-          <input type="tel" id="tel" />
-          <span>Standard call, messaging or data rates may apply.</span>
-        </div>
-        <div>
+          <input type="text" name="user_email" id="email" />
+          <label for="phone">Phone (recommended)</label>
+          <input type="text" name="user_phone" id="phone" />
           <label for="password">Password</label>
-          <input type="password" id="password" />
-        </div>
-        <button type="submit">Create Account</button>
-        <span
-          >By clicking Create Account, you agree to our Terms of Service and
-          have read and acknowledge our Privacy Statement.</span
-        >
-        <span
-          >Invisible reCAPTCHA by Google Privacy Policy and Terms of Use.</span
-        >
-      </form>
-    </div>
-    <footer>
-      <span>Legal Privacy Security</span>
-      <span>
-        © 2019 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB,
-        TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
-        Terms and conditions, features, support, pricing, and service options
-        subject to change without notice.</span
-      >
-    </footer> -->
+          <input type="password" name="user_password" id="password" />
+          <button type="submit" id="button-submit">Create account</button>
+          <p id="agreement-section">
+            By clicking Create Account, you agree to our
+            <a href="https://www.mint.com/terms">Terms of Service</a> and have
+            read and acknowledge our
+            <a href="https://security.intuit.com/privacy">Privacy Statement</a>
+          </p>
+          <div id="captcha">
+            <p>
+              Invisible reCAPTCHA by Google
+              <a href="https://www.google.com/intl/en/policies/privacy/">
+                Privacy Policy</a
+              >
+              and
+              <a href="https  ://policies.google.com/terms?hl=en"
+                >Terms of Use</a
+              >.
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
