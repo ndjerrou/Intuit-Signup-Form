@@ -1,6 +1,7 @@
 body {
   background-color: #eceef1;
-  font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
 
 nav {
@@ -75,25 +76,48 @@ section {
   margin-bottom: 15px;
 }
 
-#icons>img {
+#icons > img {
   width: 30px;
   height: 30px;
   margin: 0 10px;
 }
 
 #button-submit {
+  margin-top: 30px;
   background-color: #0077c5;
   height: 50px;
+  display: flex;
+  justify-content: center;
+  /* align horizontally */
+  align-items: center;
+  /* align vertically */
+}
+
+#button-submit span {
+  color: white;
+  font-size: 18px;
+  padding-left: 5px;
+}
+#button-submit img {
+  width: 20px;
+  height: 20px;
 }
 
 form {
   margin: 0 auto;
   height: 100%;
-  width: 60%;
+  width: 50%;
+}
+label {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+input {
+  height: 30px;
 }
 
 #wrapper {
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -126,6 +150,8 @@ form {
   display: inline-block;
   width: 100%;
   margin-top: 0px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 10px;
   text-align: center;
   border-right: 0.5px solid grey;
@@ -139,7 +165,7 @@ form {
 }
 
 footer {
-  padding-top: 10px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -151,7 +177,7 @@ footer {
   margin: 0 auto;
 }
 
-#links-footer>a {
+#links-footer > a {
   text-decoration: none;
 }
 
@@ -159,4 +185,11 @@ footer {
   font-size: 13px;
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#text-footer > p {
+  margin: 1px;
+  text-align: center;
 }
