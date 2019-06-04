@@ -1,7 +1,6 @@
 body {
   background-color: #eceef1;
-  font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 nav {
@@ -9,7 +8,6 @@ nav {
   height: 100px;
   display: flex;
   flex-direction: row-reverse;
-
   font-weight: normal;
   font-size: 12px;
   line-height: 1.5;
@@ -44,6 +42,7 @@ nav #button {
   width: 20px;
   height: 20px;
 }
+
 #signin-button span {
   color: white;
   padding-left: 5px;
@@ -71,6 +70,15 @@ section {
 
 #icons {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#icons>img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
 }
 
 #button-submit {
@@ -81,10 +89,7 @@ section {
 form {
   margin: 0 auto;
   height: 100%;
-  width: 45%;
-  border-top: 0.5px solid grey;
-  border-right: 0.5px solid grey;
-  border-left: 0.5px solid grey;
+  width: 60%;
 }
 
 #wrapper {
@@ -95,6 +100,8 @@ form {
   /* border: 0.2px solid black; */
   /* padding: 20px; */
   background-color: white;
+  border: 0.5px solid grey;
+  border-bottom: 0px;
 }
 
 #agreement-section {
@@ -125,22 +132,31 @@ form {
   border-left: 0.5px solid grey;
   border-bottom: 0.5px solid grey;
 }
-#icons,
+
 #title {
   margin: 0 auto;
   margin-bottom: 20px;
 }
-#icons img {
-  width: 25px;
-  height: 25px;
-  display: flex;
-  justify-content: center;
-}
+
 footer {
   padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-footer p {
-  text-align: center;
-  font-size: 8px;
-  color: grey;
+
+#links-footer {
+  font-size: 11px;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+#links-footer>a {
+  text-decoration: none;
+}
+
+#text-footer {
+  font-size: 13px;
+  width: 90%;
+  margin: 0 auto;
 }
