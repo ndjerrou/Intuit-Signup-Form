@@ -18,7 +18,7 @@
       </div>
       <div id="button">
         <button id="signin-button">
-          <img src="/assets/images/login-icon.png" alt="" />
+          <img src="/assets/images/lock.png" alt="" />
           <span>Sign In</span>
         </button>
       </div>
@@ -26,42 +26,47 @@
     <main>
       <section>
         <div id="title">
-          <a href="#"><h1>INTUIT</h1></a>
+          <a href="#"><img src="./assets/images/intuit_logo.jpg" alt=""/></a>
         </div>
         <div id="icons">
-          <img src="" alt="" />
+          <img src="./assets/images/mint.png" alt="" />
           <span>mint</span>
-          <img src="" alt="" />
+          <img src="./assets/images/quickbooks.jpg" alt="" />
           <span>quickbooks</span>
-          <img src="" alt="" />
+          <img src="./assets/images/turbotax.ico" alt="" />
           <span>turbotax</span>
         </div>
 
         <form>
-          <div id="description-form">
-            <h2>Create an Intuit account</h2>
-            <span class="one-account"
-              >One account for everything Intuit, including Mint.</span
-            >
-            <a
-              href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account"
-              class="learn-more-link"
-              >Learn more</a
-            >
+          <div id="wrapper">
+            <div id="description-form">
+              <h2>Create an Intuit account</h2>
+              <span class="one-account"
+                >One account for everything Intuit, including Mint.</span
+              >
+              <a
+                href="https://accounts-help.lc.intuit.com/questions/1582580-creating-an-account"
+                class="learn-more-link"
+                >Learn more</a
+              >
+            </div>
+            <label for="email">Email address</label>
+            <input type="text" name="user_email" id="email" />
+            <label for="phone">Phone (recommended)</label>
+            <input type="text" name="user_phone" id="phone" />
+            <label for="password">Password</label>
+            <input type="password" name="user_password" id="password" />
+            <button type="submit" id="button-submit">Create account</button>
+            <p id="agreement-section">
+              By clicking Create Account, you agree to our
+              <a href="https://www.mint.com/terms">Terms of Service</a> and have
+              read and acknowledge our
+              <a href="https://security.intuit.com/privacy"
+                >Privacy Statement</a
+              >
+            </p>
           </div>
-          <label for="email">Email address</label>
-          <input type="text" name="user_email" id="email" />
-          <label for="phone">Phone (recommended)</label>
-          <input type="text" name="user_phone" id="phone" />
-          <label for="password">Password</label>
-          <input type="password" name="user_password" id="password" />
-          <button type="submit" id="button-submit">Create account</button>
-          <p id="agreement-section">
-            By clicking Create Account, you agree to our
-            <a href="https://www.mint.com/terms">Terms of Service</a> and have
-            read and acknowledge our
-            <a href="https://security.intuit.com/privacy">Privacy Statement</a>
-          </p>
+          <!-- wrapper -->
           <div id="captcha">
             <p>
               Invisible reCAPTCHA by Google
@@ -76,6 +81,15 @@
           </div>
         </form>
       </section>
+      <footer>
+        <p>Legal Privacy Security</p>
+        <p>
+          © 2019 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB,
+          TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
+          Terms and conditions, features, support, pricing, and service options
+          subject to change without notice.
+        </p>
+      </footer>
     </main>
   </body>
 </html>
