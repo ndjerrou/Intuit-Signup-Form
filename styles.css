@@ -1,31 +1,25 @@
 body {
   background-color: #eceef1;
-  font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial,
-    sans-serif;
+  font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 nav {
   width: 100%;
-  height: 100px;
+  height: 40px;
   display: flex;
   flex-direction: row-reverse;
+  align-items: center;
   font-weight: normal;
   font-size: 12px;
   line-height: 1.5;
 }
 
 nav #login {
-  order: 2;
-}
-
-nav #button {
   order: 1;
 }
 
-#login {
-  display: flex;
-  flex-direction: column;
-  margin-right: 15px;
+nav #button {
+  order: 2;
 }
 
 #container {
@@ -40,7 +34,6 @@ nav #button {
 }
 
 #signin-button img {
-  width: 20px;
   height: 20px;
 }
 
@@ -49,18 +42,13 @@ nav #button {
   padding-left: 5px;
 }
 
-#button {
-  width: 150px;
-}
-
 #signin-button {
   display: flex;
   justify-content: center;
-  /* align horizontally */
   align-items: center;
-  /* align vertically */
   width: 100%;
-  height: 50%;
+  height: 60%;
+  ;
   background-color: #0077c5;
 }
 
@@ -76,7 +64,7 @@ section {
   margin-bottom: 15px;
 }
 
-#icons > img {
+#icons>img {
   width: 30px;
   height: 30px;
   margin: 0 10px;
@@ -98,6 +86,7 @@ section {
   font-size: 18px;
   padding-left: 5px;
 }
+
 #button-submit img {
   width: 20px;
   height: 20px;
@@ -108,10 +97,12 @@ form {
   height: 100%;
   width: 50%;
 }
+
 label {
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
 input {
   height: 30px;
 }
@@ -177,7 +168,7 @@ footer {
   margin: 0 auto;
 }
 
-#links-footer > a {
+#links-footer>a {
   text-decoration: none;
 }
 
@@ -189,7 +180,24 @@ footer {
   flex-direction: column;
   justify-content: center;
 }
-#text-footer > p {
+
+#text-footer>p {
   margin: 1px;
   text-align: center;
+}
+
+#container-login {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+#button {
+  height: 150%;
 }
