@@ -1,6 +1,7 @@
 body {
   background-color: #eceef1;
-  font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "AvenirNext", Avenir, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
 }
 
 nav {
@@ -48,7 +49,6 @@ nav #button {
   align-items: center;
   width: 100%;
   height: 60%;
-  ;
   background-color: #0077c5;
 }
 
@@ -64,7 +64,7 @@ section {
   margin-bottom: 15px;
 }
 
-#icons>img {
+#icons > img {
   width: 30px;
   height: 30px;
   margin: 0 10px;
@@ -95,7 +95,7 @@ section {
 form {
   margin: 0 auto;
   height: 100%;
-  width: 50%;
+  width: 30%;
 }
 
 label {
@@ -123,6 +123,9 @@ input {
   font-style: italic;
   font-size: 12px;
   padding: 20px 0px;
+  text-align: center;
+  color: grey;
+  line-height: 2em;
 }
 
 #description-form {
@@ -168,7 +171,7 @@ footer {
   margin: 0 auto;
 }
 
-#links-footer>a {
+#links-footer > a {
   text-decoration: none;
 }
 
@@ -181,7 +184,7 @@ footer {
   justify-content: center;
 }
 
-#text-footer>p {
+#text-footer > p {
   margin: 1px;
   text-align: center;
 }
